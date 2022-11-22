@@ -1,0 +1,41 @@
+- Infraestructura como código (IaC)
+- Configuración como código (CaC)
+- Infrastructure as a service (IaaS)
+
+---------------------------------------------------------------------------
+
+- Inicializar el proyecto terraform (se instalan los plugins para el proveedor elegido docker, aws, etc.)
+> terraform init
+
+- Validar una correcta configuración
+> terraform validate
+
+- Formatear archivo .tf
+> terraform fmt
+
+- Realizar planeación, al final nos imprime la salida de los datos del cluster
+> terraform plan
+
+- Aplicar las validaciones y la planificación
+> terraform apply
+
+- Revisar los procesos de Docker
+> docker ps
+
+- Realizar petición
+> curl http://localhost:5000/
+
+- Ver logs de Docker del container microservicio-demo
+> docker logs microservicio-demo
+
+- Limpiar o destruir los recursos que se generaron (elimina el container, no la imagen))
+> terraform destroy
+
+---------------------------------------------------------------------------
+
+> docker build .
+> docker run -d --name micro-python -p5000:5000 f7c9a7b16951
+
+---------------------------------------------------------------------------
+
+
